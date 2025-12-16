@@ -23,4 +23,4 @@ Main Theme repo can be found [here](https://github.com/eldritch-theme/eldritch)
 7. Write and quit the file with `:wq`.
 8. Reload the config file with `:config-reload` OR re-open helix and enjoy!
 
-<p style="font-size:10px;" align="center"> Made with ♥ by Aurora. <p>
+<p align="center"> Made with ♥ by Aurora. <p>
