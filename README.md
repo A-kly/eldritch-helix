@@ -11,7 +11,7 @@ Main Theme repo can be found [here](https://github.com/eldritch-theme/eldritch)
 ### Showcase
 <!-- Your screenshot should go here -->
 <img src="screenshot.png" alt="Screenshot"/><br/>
-<p align="center"> Sample code taken from [AliBinary/vscode-theme-test](https://github.com/AliBinary/vscode-theme-test). </p>
+<p align="center"> Sample code taken from <a href="https://github.com/AliBinary/vscode-theme-test">AliBinary/vscode-theme-test</a>
 
 ### Installation
 1. Clone this repo, or otherwise download the eldritch.toml file located [here](https://github.com/A-kly/eldritch-helix/blob/main/eldritch.toml).
