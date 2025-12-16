@@ -1,6 +1,6 @@
 # Made with ♥ by Aurora
-# Theme format roughly taken from monokai soda
-# Potentially includes redundancy or disfunctional sections
+# Theme format originates from pre-installed 'monokai-soda' theme, with modifications.
+# Potentially includes redundancy or disfunctional sections. I will attempt to improve this over time!
 # Enjoy!
 
 ## Constants
@@ -125,7 +125,7 @@ rainbow = ["dark-purple", "cyan", "green", { fg = "#00ff00", modifiers = ["bold"
 
 [palette]
 
-black = "#171928" #
+black = "#171928" # Darker version of Sunken Depths Grey
 dark-gray= "#212337" # Sunken Depths Grey
 gray = "#323449" # Shallow Depths Grey
 white = "#ebfafa" # Lighthouse White
