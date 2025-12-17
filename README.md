@@ -15,7 +15,7 @@ Main Theme repo can be found [here](https://github.com/eldritch-theme/eldritch)
 <p align="center"> Sample code taken from <a href="https://github.com/AliBinary/vscode-theme-test">AliBinary/vscode-theme-test</a>
 
 ### Installation
-1. Clone this repo, or otherwise download the eldritch.toml file located [here](https://github.com/A-kly/eldritch-helix/blob/main/eldritch.toml).
+1. Clone this repo, or otherwise download the `eldritch.toml` file located [here](https://github.com/A-kly/eldritch-helix/blob/main/eldritch.toml).
 2. Run `mkdir ~/.config/helix/themes` to create a new `themes` directory in the helix config folder.
 3. Copy `eldritch.toml` into this folder.
 4. Open helix by running `hx` in the terminal.
