@@ -11,6 +11,7 @@ Main Theme repo can be found [here](https://github.com/eldritch-theme/eldritch)
 ### Showcase
 <!-- Your screenshot should go here -->
 <img src="screenshot.png" alt="Screenshot"/><br/>
+<img src="screenshot2.png" alt="Screenshot2"/><br/>
 <p align="center"> Sample code taken from <a href="https://github.com/AliBinary/vscode-theme-test">AliBinary/vscode-theme-test</a>
 
 ### Installation
