@@ -61,7 +61,7 @@
 ## Diagnostics
 "diagnostic" = { modifiers = ["underlined"] }
 "diagnostic.error" = { underline = { style = "curl", color = "bright_red" } }
-"diagnostic.warning" = { underline = { style = "curl", color = "Yellow" } }
+"diagnostic.warning" = { underline = { style = "curl", color = "Orange" } }
 "diagnostic.info" = { underline = { style = "curl", color = "Cyan" } }
 "diagnostic.hint" = { underline = { style = "curl", color = "Cyan" } }
 "diagnostic.unnecessary" = { modifiers = ["dim"] }
@@ -95,7 +95,7 @@
 "namespace" = "Orange"
 "operator" = "Purple"
 "special" = "Green"
-"warning" = "Yellow"
+"warning" = "Orange"
 
 #############
 # Editor UI #
