@@ -6,7 +6,7 @@
 ## Constants
 "constant" = "bright_cyan"
 "constant.builtin" = "bright_cyan"
-"constant.builtin.boolean" = "Green"
+"constant.builtin.boolean" = "Cyan"
 "constant.character.escape" = "Cyan"
 "constant.numeric" = "Green" 
 "constant.numeric.float" = "Pink"
