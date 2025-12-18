@@ -4,32 +4,33 @@
 # Enjoy!
 
 ## Constants
-"constant" = "bright_cyan"
+"constant" = "Red"
 "constant.builtin" = "bright_cyan"
 "constant.builtin.boolean" = "Cyan"
 "constant.character.escape" = "Cyan"
 "constant.numeric" = "Green" 
 "constant.numeric.float" = "Pink"
-"constant.character" = "Pink"
+"constant.character" = "Orange"
 
 ## Functions
-"function" = "Purple"
+"function" = "Pink"
 "function.macro" = "Purple"
 "function.builtin" = "Cyan"
 "function.method" = "Purple"
+"function.special" = "dark_cyan"
 
 ## Constructor
 "constructor" = "Cyan"
 
 ## Keywords
-"keyword" = "Green"
+"keyword" = { fg = "dark_cyan", modifiers = [ "italics" ]}
 "keyword.function" = "Cyan"
-"keyword.operator" = "Purple"
+"keyword.operator" = "Cyan"
 "keyword.conditional" = "Purple"
 "keyword.repeat" = "Purple"
 "keyword.control.exception" = "Green"
 "keyword.control.import" = "Purple"
-"keyword.directive" = "Pink"
+"keyword.directive" = "dark_cyan"
 "keyword.storage.type" = "Cyan"
 "keyword.storage.modifier" = "Cyan"
 
@@ -39,31 +40,33 @@
 
 ## Strings
 "string" = "Yellow"
+"string.special" = "Cyan"
+"string.special.path" = "Cyan"
 
 ## Types
-"type" = "bright_purple" # CAUSES ISSUES when following     ["@type"] = { fg = colors.bright_purple },
+"type" = "Cyan" 
 "type.builtin" = {fg = "Cyan", modifiers = [ "italic" ] }
 "type.parameter" = "Cyan"
 
 ## Variables
-"variable"  = "Red"
+"variable"  = "magenta"
 "variable.builtin" = "Green"
 "variable.other.member" = "Orange"
 "variable.parameter" = "Orange"
 
 ## Diffs
-"diff.plus" = "Green"
-"diff.delta" = "Orange"
-"diff.minus" = "Red"
-"diff.delta.moved" = "Yellow"
+"diff.plus" = { fg = "Green", modifiers = [ "dim" ] }
+"diff.delta" = { fg = "Orange", modifiers = [ "dim" ] }
+"diff.delta.moved" = { fg = "Yellow", modifiers = [ "dim" ] }
+"diff.minus" = { fg = "Red", modifiers = [ "dim" ] }
 
 
 ## Diagnostics
 "diagnostic" = { modifiers = ["underlined"] }
-"diagnostic.error" = { underline = { style = "curl", color = "bright_red" } }
-"diagnostic.warning" = { underline = { style = "curl", color = "Orange" } }
+"diagnostic.error" = { underline = { style = "curl", color = "Red" } }
+"diagnostic.warning" = { underline = { style = "curl", color = "Yellow" } }
 "diagnostic.info" = { underline = { style = "curl", color = "Cyan" } }
-"diagnostic.hint" = { underline = { style = "curl", color = "Cyan" } }
+"diagnostic.hint" = { underline = { style = "curl", color = "dark_green" } }
 "diagnostic.unnecessary" = { modifiers = ["dim"] }
 "diagnostic.deprecated" = { modifiers = ["crossed_out"] }
 
@@ -72,9 +75,12 @@
 "markup" = "Orange"
 "markup.list" = "Cyan"
 "markup.link.label" = "Cyan"
-"markup.bold" = { fg = "Orange", modifiers = ["bold"] }
-"markup.italic" = { fg = "Yellow", modifiers = ["italic"] }
+"markup.bold" = { fg = "Foreground", modifiers = ["bold"] }
+"markup.italic" = { fg = "Foreground", modifiers = ["italic"] }
 "markup.heading" = { fg = "Purple", modifiers = ["bold"] }
+"markup.heading.1" = { fg = "magenta", modifiers = [ "bold" ] }
+"markup.heading.2" = { fg = "Cyan", modifiers = [ "bold" ] }
+
 "markup.raw" = "Yellow"
 "markup.link.url" = { fg = "Yellow", modifiers = [ "underlined", "italic"] }
 "markup.link" = { fg = "Orange", modifiers = [ "bold" ] }
@@ -85,9 +91,9 @@
 
 
 ## Misc
-"attribute" = "Cyan"
+"attribute" = "dark_cyan"
 "comment" = { fg = "Comment", modifiers = ["italic" ] }
-"error" = "bright_red"
+"error" = "Red"
 "hint" = "Cyan"
 "info" = "Cyan"
 "label" = "Cyan"
@@ -95,7 +101,7 @@
 "namespace" = "Orange"
 "operator" = "Purple"
 "special" = "Green"
-"warning" = "Orange"
+"warning" = "Yellow"
 
 #############
 # Editor UI #
@@ -104,45 +110,49 @@
 ## Main
 "ui.background" = { bg = "Background" }
 "ui.text" = "Foreground"
-"ui.window" = { bg = "Gray" }
 
 ## Menus
 "ui.menu" = { fg = "Foreground", bg = "Gray" }
 "ui.menu.selected" = { modifiers = ["reversed"] }
-"ui.popup" = { bg = "Gray" }
-"ui.help" = { fg = "Foreground", bg = "Gray" }
+"ui.popup" = { bg = "bg_dark" }
+"ui.help" = { fg = "Cyan", bg = "black" }
 
 ## Gutter
-"ui.linenr" = "Gray"
-"ui.linenr.selected" = "Green"
+"ui.linenr" = "fg_gutter"
+"ui.linenr.selected" = { fg = "Orange", modifiers = [ "bold" ]}
 
 ## Cursor
 "ui.cursor.insert" = "Foreground"
 "ui.cursor.primary" = { fg = "Foreground", modifiers = ["reversed"] }
-"ui.cursor.match" = { modifiers = ["reversed"] }
+"ui.cursor.match" = { fg = "Orange", modifiers = [ "bold" ] } # maybe change this
 "ui.cursor.select" = { bg = "visual"}
 "ui.selection" = { bg = "visual" }
-"ui.cursorline.primary" = { bg = "Gray" }
+"ui.cursorline.primary" = { bg = "bg_highlight" }
+"ui.cursorcolumn.primary" = { bg = "bg_highlight" }
 
 ## Bufferline
-"ui.bufferline" = "Foreground"
-"ui.bufferline.active" = {fg = "Green", modifiers = ["bold"]}
-"ui.bufferline.background" = {bg = "Background"}
+"ui.bufferline" = {fg = "fg_gutter", bg = "bg_dark"}
+"ui.bufferline.active" = {fg = "black", bg = "Cyan", modifiers = ["bold"]}
+"ui.bufferline.background" = "black"
 
 ## Statusline
-"ui.statusline" = { fg = "Foreground", bg = "Background" }
-"ui.statusline.inactive" = { fg = "Foreground", bg = "Gray" }
-"ui.statusline.normal" = { fg = "Foreground", bg = "Cyan" }
-"ui.statusline.insert" = { fg = "Foreground", bg = "Green" }
-"ui.statusline.select" = { fg = "Foreground", bg = "Purple" }
+"ui.statusline" = { fg = "fg_dark", bg = "bg_dark" }
+"ui.statusline.inactive" = { fg = "fg_gutter", bg = "bg_dark" }
+"ui.statusline.normal" = { fg = "Background", bg = "Cyan" }
+"ui.statusline.insert" = { fg = "Background", bg = "Green" }
+"ui.statusline.select" = { fg = "Background", bg = "Purple" }
 
 "ui.text.focus" = { fg = "Green", modifiers = ["bold"] }
 
 "ui.virtual" = "Gray"
-"ui.virtual.whitespace" = { fg = "Gray" } 
+"ui.virtual.whitespace" = { fg = "fg_gutter" } 
 "ui.virtual.indent-guide" = "Comment"
 "ui.virtual.ruler" = { bg = "Gray" }
 "ui.virtual.jump-label" = { fg = "Pink", modifiers = ["bold"] }
+
+## Debug
+"ui.debug.breakpoint" = { fg = "Cyan", modifiers = [ "dim" ] }
+"ui.debug.active" = "bg_dark"
 
 ## Brackets
 
@@ -153,6 +163,7 @@ rainbow = ["Foreground",
           "Green",
           "Orange",
           "Foreground"]
+
 
 [palette]
 # From spec
@@ -169,9 +180,19 @@ Red="#f16c75"# R'lyeh' Red
 Yellow="#f1fc79"# Gold of Yuggoth
 
 # Supplimentary
-
-bright_red = "#f9515d"
-bright_cyan = "#66e4fd"
+black = "#05060c"
+fg_dark = "#ABB4DA"
+bg_dark = "#171928"
+terminal_black = "#414868"
+fg_gutter = "#3b4261"
+bg_highlight = "#292e42"
+magenta = "#a48cf2"
+bright_red = "#f0313e"
+bright_cyan = "#39DDFD"
+dark_cyan = "#10A1BD"
 bright_purple = "#ad8cff"
-visual = "#554971"
+bright_green = "#00FA82"
+dark_green = "#33C57F"
+visual = "#76639e"
 
+# Git
